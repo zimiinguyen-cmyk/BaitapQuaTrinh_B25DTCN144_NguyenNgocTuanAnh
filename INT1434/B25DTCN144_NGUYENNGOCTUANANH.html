@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Nguyễn Ngọc Tuấn Anh</title>
+    <link rel="stylesheet" href="B25DTCN144_NGUYENNGOCTUANANH.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/B25DTCN144_logo.png" alt="Logo PTIT" class="logo-img">
+                <span>PTIT VASA</span>
+            </div>
+            <div id="digital-clock" class="digital-clock">00:00:00</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="card profile-card">
+            <div class="avatar-wrapper">
+                <img src="images/B25DTCN144_avatar.png" alt="Ảnh đại diện" id="avatar-img" class="avatar">
+                <div class="avatar-overlay">Click để phóng to</div>
+            </div>
+            <div class="profile-info">
+                <h2>Nguyễn Ngọc Tuấn Anh</h2>
+                <p class="subtitle">Sinh viên Công nghệ Thông tin</p>
+                <hr>
+                <div class="info-grid">
+                    <p><strong>Mã sinh viên:</strong> B25ĐTCN144</p>
+                    <p><strong>Lớp:</strong> D25TXCN08-B</p>
+                    <p><strong>Trường:</strong> Học viện Công nghệ Bưu chính Viễn thông</p>
+                    <p><strong>Ngày sinh:</strong> 31/08/2007</p>
+                    <p><strong>Giới tính:</strong> Nam</p>
+                    <p><strong>Email:</strong> daophamthianh1@gmail.com</p>
+                    <p><strong>Số điện thoại:</strong> 0967689025</p>
+                    <p><strong>Địa chỉ:</strong> Hà Nội, Việt Nam</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card work-section">
+            <h3 class="section-title"><i class="fa-solid fa-briefcase"></i> Công việc hiện tại</h3>
+            <div class="work-details">
+                <h4>Lập trình viên Frontend (Thực tập sinh)</h4>
+                <p class="company"><strong>Cơ quan công tác:</strong> Công ty Cổ phần Công nghệ ABC</p>
+                <p class="description">
+                    Tham gia phát triển giao diện người dùng cho các ứng dụng Web, tối ưu hóa trải nghiệm người dùng (UX/UI) và tích hợp các dịch vụ API RESTful.
+                </p>
+            </div>
+        </section>
+
+        <section class="card hobbies-section">
+            <h3 class="section-title"><i class="fa-solid fa-heart"></i> Sở thích cá nhân</h3>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <i class="fa-solid fa-code hobby-icon"></i>
+                    <h4>Lập trình Web</h4>
+                    <p>Đam mê tìm hiểu các công nghệ mới như React, VueJS và xây dựng giao diện tương tác cao.</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-gamepad hobby-icon"></i>
+                    <h4>Chơi trò chơi điện tử</h4>
+                    <p>Giải trí sau giờ làm việc với các tựa game chiến thuật và nhập vai thế giới mở.</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-book-open hobby-icon"></i>
+                    <h4>Đọc sách công nghệ</h4>
+                    <p>Thường xuyên tìm đọc sách về kiến trúc phần mềm, tư duy tối ưu mã nguồn và UI/UX design.</p>
+                </div>
+            </div>
+
+            <div id="more-hobbies" class="hobbies-more hidden">
+                <div class="hobby-card">
+                    <i class="fa-solid fa-camera hobby-icon"></i>
+                    <h4>Nhiếp ảnh</h4>
+                    <p>Yêu thích ghi lại những khoảnh khắc đời thường và phong cảnh thiên nhiên.</p>
+                </div>
+                <div class="hobby-card">
+                    <i class="fa-solid fa-music hobby-icon"></i>
+                    <h4>Nghe nhạc Lo-Fi</h4>
+                    <p>Thư giãn tư duy và tập trung làm việc hiệu quả với âm nhạc nhẹ nhàng.</p>
+                </div>
+            </div>
+            
+            <div class="toggle-btn-container">
+                <button id="toggle-hobbies-btn" class="btn">Xem thêm</button>
+            </div>
+        </section>
+
+        <section class="card social-section">
+            <h3 class="section-title"><i class="fa-solid fa-share-nodes"></i> Liên kết mạng xã hội</h3>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+                    <i class="fa-brands fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://zalo.me" target="_blank" class="social-btn zalo">
+                    <i class="fa-solid fa-comment-dots"></i> Zalo
+                </a>
+                <a href="https://github.com" target="_blank" class="social-btn github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Zimii. Bản quyền đã được bảo lưu.</p>
+    </footer>
+
+    <div id="image-modal" class="modal hidden">
+        <span id="close-modal" class="modal-close">&times;</span>
+        <img id="modal-img" class="modal-content" alt="Ảnh phóng to">
+    </div>
+
+    <script src="B25DTCN144_NGUYENNGOCTUANANH.js"></script>
+</body>
+</html>
